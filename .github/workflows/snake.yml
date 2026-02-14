@@ -2,22 +2,34 @@ name: Generate Snake
 
 on:
   schedule:
-    - cron: "0 */6 * * *"  # ทำงานทุก 6 ชั่วโมง
-  workflow_dispatch:  # สามารถกดรันเองได้
+    - cron: "0 */12 * * *"  # ทำงานทุก 12 ชั่วโมง
+  workflow_dispatch:  # กดรันเองได้
+  push:
+    branches:
+      - main
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
     steps:
-      - uses: Platane/snk@master
-        id: snake-gif
+      # Checkout repository
+      - name: Checkout
+        uses: actions/checkout@v3
+      
+      # Generate snake animation
+      - name: Generate snake animation
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: Galileo-InwZa
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
       
-      - uses: crazy-max/ghaction-github-pages@v3.1.0
+      # Push to output branch
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: output
           build_dir: dist
