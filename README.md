@@ -1,6 +1,6 @@
 <div align="center">
 
-# 👋 Hello, I'm Natthawut (Galileo)
+# 👋 Hello, I'm NESEMZ (Galileo)
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=3DADE8&center=true&vCenter=true&width=600&lines=Full-Stack+Developer+%F0%9F%92%BB;PHP+%7C+JavaScript+%7C+SQL+Expert;Building+Amazing+Web+Apps+%E2%9C%A8;Always+Learning+New+Things+%F0%9F%9A%80)](https://git.io/typing-svg)
 
