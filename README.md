@@ -13,11 +13,11 @@
 ## 🚀 About Me
 
 ```javascript
-const natthawut = {
-    name: "Natthawut (Galileo)",
+const NESEMZ = {
+    name: "NESEMZ (Galileo Inwza)",
     location: "Thailand 🇹🇭",
     role: "Full-Stack Developer",
-    company: "Union Autoparts Manufacturing (UAM)",
+    company: "Oops!",
 
     code: ["PHP", "JavaScript", "HTML", "CSS", "SQL"],
     technologies: {
